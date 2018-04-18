@@ -16,4 +16,8 @@ router.get('/json', async (ctx, next) => {
   }
 })
 
+router.get('/ip', async (ctx, next) => {
+  ctx.body = ctx.req;
+})
+
 module.exports = router
