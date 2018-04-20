@@ -23,7 +23,7 @@
     node --inspect-brk=0.0.0.0:7878 (ip:port)
     node --inspect=0.0.0.0:7878 (0.0.0.0代表允许所有链接)
     chrome启用inspect调试工具
-    chrome-devtools://devtools/bundled/inspector.html?experiments=true&v8only=true&ws=(ws地址)
+    chrome-devtools://devtools/bundled/inspector.html?experiments=true&v8only=true&ws=(ws地址) 
 ### 集群
     启用共享端口的多线程
 # JavaScript
@@ -37,7 +37,14 @@
     Function.prototype为函数对象，Function没有原型对象
      
 ### 原型链
-    
+    Person.prototype.constructor == Person;
+    类的prototype为原型对象，构造函数再类的原型对象里
+    person1.__proto__ == Person.prototype;
+    对象的__proto__为类的原型对象
+    person1.constructor == Person;
+    对象的构造函数和类的构造函数相等
+
+    实例与构造函数的原型对象之间
 ### 如何完美的继承一个原型链
 ### 事件驱动
 ### promise
